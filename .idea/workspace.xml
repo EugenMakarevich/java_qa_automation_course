@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_qa_automation_course/java_qa_automation_course.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +49,8 @@
     "last_opened_file_path": "C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/sandbox/build.gradle",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RunManager">
