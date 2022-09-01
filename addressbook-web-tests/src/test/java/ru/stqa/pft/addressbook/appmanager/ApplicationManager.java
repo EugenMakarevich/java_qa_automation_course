@@ -23,8 +23,6 @@ public class ApplicationManager {
     sessionHelper.login("admin", "secret");
   }
 
-
-
   public void stop() {
     wd.quit();
   }
@@ -37,16 +35,6 @@ public class ApplicationManager {
       return false;
     }
   }
-
-  public boolean isAlertPresent() {
-    try {
-      wd.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-  }
-
   public GroupHelper getGroupHelper() {
     return groupHelper;
   }
