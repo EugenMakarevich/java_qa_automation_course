@@ -30,15 +30,15 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//input[@value='Delete']"));
   }
 
-  public void closeAlertPopUp() {
+  public void acceptContactDelition() {
     wd.switchTo().alert().accept();
   }
 
-  public void editContact() {
+  public void initContactModification() {
     click(By.xpath("//img[@alt='Edit']"));
   }
 
-  public void updateContact() {
+  public void submitContactModification() {
     click(By.xpath("//input[22]"));
   }
 }
