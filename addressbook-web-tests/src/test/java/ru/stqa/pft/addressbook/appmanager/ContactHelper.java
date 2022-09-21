@@ -1,14 +1,16 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
-  public ContactHelper(WebDriver wd) {
-    super(wd);
+  private final ApplicationManager manager;
+
+  public ContactHelper(ApplicationManager manager) {
+    super(manager.wd);
+    this.manager = manager;
   }
 
   public void fillContactForm(ContactData contactData, boolean creation) {
@@ -47,5 +49,16 @@ public class ContactHelper extends HelperBase {
 
   public void submitContactModification() {
     click(By.xpath("//input[22]"));
+  }
+
+  public void createContact(ContactData contact) {
+    manager.getNavigationHelper().goToAddNewContactPage();
+    fillContactForm(contact, true);
+    submitContactCreation();
+    manager.getNavigationHelper().goToHomePage();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
   }
 }

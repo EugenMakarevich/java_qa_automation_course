@@ -39,7 +39,7 @@ public class ApplicationManager {
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
-    contactHelper = new ContactHelper(wd);
+    contactHelper = new ContactHelper(this);
     sessionHelper.login("admin", "secret");
   }
 
