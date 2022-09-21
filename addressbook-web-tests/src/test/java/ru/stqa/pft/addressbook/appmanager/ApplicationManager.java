@@ -33,7 +33,7 @@ public class ApplicationManager {
       wd = new InternetExplorerDriver();
     }
 
-    wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+    wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
     js = (JavascriptExecutor) wd;
     wd.get("http://localhost/addressbook/");
     groupHelper = new GroupHelper(wd);
