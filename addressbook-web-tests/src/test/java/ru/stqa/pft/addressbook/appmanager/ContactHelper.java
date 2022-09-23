@@ -1,9 +1,13 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.GroupData;
+
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
   private final ApplicationManager manager;
@@ -14,17 +18,22 @@ public class ContactHelper extends HelperBase {
   }
 
   public void fillContactForm(ContactData contactData, boolean creation) {
-    type(By.name("firstname"), contactData.getFirstname());
-    type(By.name("lastname"), contactData.getLastname());
-    type(By.name("address"), contactData.getAddress());
-    type(By.name("home"), contactData.getHomephone());
-    type(By.name("mobile"), contactData.getMobilephone());
-    type(By.name("email"), contactData.getEmail());
-    if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-    } else {
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    if (creation && !isThereAGroup(contactData)) {
+      manager.getNavigationHelper().goToGroupPage();
+      manager.getGroupHelper().createGroup(new GroupData("test1", null, null));
+      manager.getNavigationHelper().goToAddNewContactPage();
     }
+      type(By.name("firstname"), contactData.getFirstname());
+      type(By.name("lastname"), contactData.getLastname());
+      type(By.name("address"), contactData.getAddress());
+      type(By.name("home"), contactData.getHomephone());
+      type(By.name("mobile"), contactData.getMobilephone());
+      type(By.name("email"), contactData.getEmail());
+      if (creation) {
+          new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+      } else {
+        Assert.assertFalse(isElementPresent(By.name("new_group")));
+      }
   }
 
   public void submitContactCreation() {
@@ -61,4 +70,17 @@ public class ContactHelper extends HelperBase {
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
   }
+
+  public boolean isThereAGroup(ContactData contactData) {
+    Select selectGroup = new Select(wd.findElement(By.xpath("//select[@name='new_group']")));
+    List<WebElement> allOptions = selectGroup.getOptions();
+    for (WebElement option : allOptions) {
+      String optionText = option.getText();
+      if (optionText.equals(contactData.getGroup())) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 }
