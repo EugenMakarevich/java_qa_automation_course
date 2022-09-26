@@ -7,6 +7,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -23,8 +24,8 @@ public class ContactHelper extends HelperBase {
       manager.getGroupHelper().createGroup(new GroupData("test1", null, null));
       manager.getNavigationHelper().goToAddNewContactPage();
     }
-      type(By.name("firstname"), contactData.getFirstname());
-      type(By.name("lastname"), contactData.getLastname());
+      type(By.name("firstname"), contactData.getFirstName());
+      type(By.name("lastname"), contactData.getLastName());
       type(By.name("address"), contactData.getAddress());
       type(By.name("home"), contactData.getHomephone());
       type(By.name("mobile"), contactData.getMobilephone());
@@ -83,4 +84,17 @@ public class ContactHelper extends HelperBase {
     return false;
   }
 
+  public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> elements = wd.findElements(By.xpath("//tr[@name = 'entry']"));
+    for (WebElement element : elements) {
+      List<WebElement> cells = element.findElements(By.tagName("td"));
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      String firstname = cells.get(2).getText();
+      String lastname = cells.get(1).getText();
+      ContactData contact = new ContactData(id, firstname, lastname);
+      contacts.add(contact);
+    }
+    return contacts;
+  }
 }
