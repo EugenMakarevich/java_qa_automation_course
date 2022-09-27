@@ -20,9 +20,9 @@ public class ContactHelper extends HelperBase {
 
   public void fillContactForm(ContactData contactData, boolean creation) {
     if (creation && !isThereAGroup(contactData)) {
-      manager.getNavigationHelper().goToGroupPage();
-      manager.getGroupHelper().createGroup(new GroupData("test1", null, null));
-      manager.getNavigationHelper().goToAddNewContactPage();
+      manager.goTo().groupPage();
+      manager.group().create(new GroupData("test1", null, null));
+      manager.goTo().goToAddNewContactPage();
     }
       type(By.name("firstname"), contactData.getFirstName());
       type(By.name("lastname"), contactData.getLastName());
@@ -62,10 +62,10 @@ public class ContactHelper extends HelperBase {
   }
 
   public void createContact(ContactData contact) {
-    manager.getNavigationHelper().goToAddNewContactPage();
+    manager.goTo().goToAddNewContactPage();
     fillContactForm(contact, true);
     submitContactCreation();
-    manager.getNavigationHelper().goToHomePage();
+    manager.goTo().goToHomePage();
   }
 
   public boolean isThereAContact() {
