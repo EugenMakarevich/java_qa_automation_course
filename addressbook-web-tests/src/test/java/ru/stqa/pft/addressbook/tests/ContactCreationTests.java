@@ -15,11 +15,9 @@ public class ContactCreationTests extends TestBase {
     List<ContactData> after = app.getContactHelper().getContactList();
 
     before.add(contact);
-    Comparator<? super ContactData> byFirstAndLastName = Comparator.comparing(ContactData::getFirstName)
-            .thenComparing(ContactData::getLastName);
-    before.sort(byFirstAndLastName);
-    after.sort(byFirstAndLastName);
+    Comparator<? super ContactData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+    before.sort(byId);
+    after.sort(byId);
     Assert.assertEquals(before, after);
-
   }
 }

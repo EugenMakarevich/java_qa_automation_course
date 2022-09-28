@@ -75,8 +75,7 @@ public class ContactData {
   @Override
   public String toString() {
     return "ContactData{" +
-            "id='" + id + '\'' +
-            ", firstName='" + firstName + '\'' +
+            "firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
             '}';
   }
