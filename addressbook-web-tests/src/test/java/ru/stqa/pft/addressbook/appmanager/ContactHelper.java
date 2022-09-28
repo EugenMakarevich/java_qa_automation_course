@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +20,7 @@ public class ContactHelper extends HelperBase {
   public void fillContactForm(ContactData contactData, boolean creation) {
     if (creation && !isThereAGroup(contactData)) {
       manager.goTo().groupPage();
-      manager.group().create(new GroupData("test1", null, null));
+      manager.group().create(new GroupData().withName("test1"));
       manager.goTo().goToAddNewContactPage();
     }
       type(By.name("firstname"), contactData.getFirstName());
