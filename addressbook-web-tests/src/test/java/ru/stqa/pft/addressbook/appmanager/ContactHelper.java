@@ -21,7 +21,7 @@ public class ContactHelper extends HelperBase {
     if (creation && !isThereAGroup(contactData)) {
       manager.goTo().groupPage();
       manager.group().create(new GroupData().withName("test1"));
-      manager.goTo().goToAddNewContactPage();
+      manager.goTo().addNewContactPage();
     }
       type(By.name("firstname"), contactData.getFirstName());
       type(By.name("lastname"), contactData.getLastName());
@@ -36,11 +36,18 @@ public class ContactHelper extends HelperBase {
       }
   }
 
-  public void modifyContact(ContactData contact) {
+  public void modify(ContactData contact) {
     initContactModification();
     fillContactForm(contact, false);
     submitContactModification();
-    manager.goTo().goToHomePage();
+    manager.goTo().homePage();
+  }
+
+  public void delete() {
+    selectContact();
+    deleteContact();
+    acceptContactDeletion();
+    manager.goTo().homePage();
   }
 
   public void submitContactCreation() {
@@ -55,7 +62,7 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//input[@value='Delete']"));
   }
 
-  public void acceptContactDelition() {
+  public void acceptContactDeletion() {
     wd.switchTo().alert().accept();
   }
 
@@ -67,11 +74,11 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//input[22]"));
   }
 
-  public void createContact(ContactData contact) {
-    manager.goTo().goToAddNewContactPage();
+  public void create(ContactData contact) {
+    manager.goTo().addNewContactPage();
     fillContactForm(contact, true);
     submitContactCreation();
-    manager.goTo().goToHomePage();
+    manager.goTo().homePage();
   }
 
   public boolean isThereAContact() {
@@ -90,7 +97,7 @@ public class ContactHelper extends HelperBase {
     return false;
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> list() {
     List<ContactData> contacts = new ArrayList<ContactData>();
     List<WebElement> elements = wd.findElements(By.xpath("//tr[@name = 'entry']"));
     for (WebElement element : elements) {
