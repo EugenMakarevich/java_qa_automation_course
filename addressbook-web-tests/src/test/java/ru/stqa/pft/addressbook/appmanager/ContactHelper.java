@@ -36,6 +36,13 @@ public class ContactHelper extends HelperBase {
       }
   }
 
+  public void modifyContact(ContactData contact) {
+    initContactModification();
+    fillContactForm(contact, false);
+    submitContactModification();
+    manager.goTo().goToHomePage();
+  }
+
   public void submitContactCreation() {
     click(By.xpath("//div[@id='content']/form/input[21]"));
   }
