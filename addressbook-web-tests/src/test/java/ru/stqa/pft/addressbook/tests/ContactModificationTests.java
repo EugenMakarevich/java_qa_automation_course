@@ -11,7 +11,9 @@ public class ContactModificationTests extends TestBase {
   @BeforeMethod
   public void ensurePreconditions() {
     if (app.contact().list().size() == 0) {
-      app.contact().create(new ContactData("Vasya", "Pupkin", "www leningrad", "1234567", "+48123456789", "vasyapupkin@gmail.com", "test1"));
+      app.contact().create(new ContactData()
+              .withFirstName("Vasya").withLastName("Pupkin").withAddress("www leningrad").withHomephone("1234567")
+              .withMobilephone("+48123456789").withEmail("vasyapupkin@gmail.com").withGroup("test1"));
     }
   }
   @Test
@@ -19,7 +21,7 @@ public class ContactModificationTests extends TestBase {
     List<ContactData> before = app.contact().list();
     //Здесь я могу выделить переменную index и положить туда индекс? Не надо,
     //потому что в след. лекции будет замена на объект Contact
-    ContactData contact = new ContactData(before.get(0).getId(), "Vasya_1", "Pupkin_1");
+    ContactData contact = new ContactData().withId(before.get(0).getId()).withFirstName("Vasya_1").withLastName("Pupkin_1");
     app.contact().modify(contact);
     List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size());

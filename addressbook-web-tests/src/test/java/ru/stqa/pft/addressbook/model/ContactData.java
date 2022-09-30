@@ -3,30 +3,14 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
-  private int id;
-  private final String firstName;
-  private final String lastName;
+  private int id = Integer.MAX_VALUE;
+  private String firstName;
+  private String lastName;
   private String address;
   private String homephone;
   private String mobilephone;
   private String email;
   private String group;
-
-  public ContactData (int id, String firstname, String lastname) {
-    this.id = id;
-    this.firstName = firstname;
-    this.lastName = lastname;
-  }
-  public ContactData(String firstname, String lastname, String address, String homephone, String mobilephone, String email, String group) {
-    this.id = Integer.MAX_VALUE;
-    this.firstName = firstname;
-    this.lastName = lastname;
-    this.address = address;
-    this.homephone = homephone;
-    this.mobilephone = mobilephone;
-    this.email = email;
-    this.group = group;
-  }
 
   public int getId() {
     return id;
@@ -57,6 +41,46 @@ public class ContactData {
 
   public String getGroup() {
     return group;
+  }
+
+  public ContactData withId(int id) {
+    this.id = id;
+    return this;
+  }
+
+  public ContactData withFirstName(String firstName) {
+    this.firstName = firstName;
+    return this;
+  }
+
+  public ContactData withLastName(String lastName) {
+    this.lastName = lastName;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+  public ContactData withHomephone(String homephone) {
+    this.homephone = homephone;
+    return this;
+  }
+
+  public ContactData withMobilephone(String mobilephone) {
+    this.mobilephone = mobilephone;
+    return this;
+  }
+
+  public ContactData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public ContactData withGroup(String group) {
+    this.group = group;
+    return this;
   }
 
   @Override

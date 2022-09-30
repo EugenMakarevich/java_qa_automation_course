@@ -12,7 +12,9 @@ public class ContactCreationTests extends TestBase {
   public void testContactCreation() throws Exception {
     app.goTo().homePage();
     List<ContactData> before = app.contact().list();
-    ContactData contact = new ContactData("Vasya", "Pupkin", "www leningrad", "1234567", "+48123456789", "vasyapupkin@gmail.com", "test1");
+    ContactData contact = new ContactData()
+            .withFirstName("Vasya").withLastName("Pupkin").withAddress("www leningrad").withHomephone("1234567")
+            .withMobilephone("+48123456789").withEmail("vasyapupkin@gmail.com").withGroup("test1");
     app.contact().create(contact);
     List<ContactData> after = app.contact().list();
 
@@ -20,6 +22,7 @@ public class ContactCreationTests extends TestBase {
     Comparator<? super ContactData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
     before.sort(byId);
     after.sort(byId);
+
     Assert.assertEquals(before, after);
   }
 }
