@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -26,7 +27,10 @@ public class ApplicationManager {
     if (browser.equals(BrowserType.FIREFOX)) {
       wd = new FirefoxDriver();
     } else if (browser.equals(BrowserType.CHROME)) {
-      wd = new ChromeDriver();
+      //Hack to fix issue with ChromeDriver 111
+      ChromeOptions co = new ChromeOptions();
+      co.addArguments("--remote-allow-origins=*");
+      wd = new ChromeDriver(co);
     } else if (browser.equals(BrowserType.IE)) {
       wd = new InternetExplorerDriver();
     }
