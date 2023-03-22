@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,11 +85,11 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroupDataGenerator">
-    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator">
+    <configuration name="ru.stqa.pft.addressbook.generators.GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/groups.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 20 -f src/test/resources/groups.csv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -195,7 +198,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GroupDataGenerator" />
+      <item itemvalue="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <item itemvalue="TestNG.ContactDataTest" />
       <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.ContactAddressTest" />
