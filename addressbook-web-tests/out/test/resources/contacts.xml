@@ -1,0 +1,29 @@
+<list>
+  <contact>
+    <firstName>Vasya 0</firstName>
+    <lastName>Pupkin 0</lastName>
+    <address>www leningrad 0</address>
+    <homePhone>1234567 0</homePhone>
+    <mobilePhone>481234567890</mobilePhone>
+    <email>vasyapupkin0@gmail.com</email>
+    <group>test 0</group>
+  </contact>
+  <contact>
+    <firstName>Vasya 1</firstName>
+    <lastName>Pupkin 1</lastName>
+    <address>www leningrad 1</address>
+    <homePhone>1234567 1</homePhone>
+    <mobilePhone>481234567891</mobilePhone>
+    <email>vasyapupkin1@gmail.com</email>
+    <group>test 1</group>
+  </contact>
+  <contact>
+    <firstName>Vasya 2</firstName>
+    <lastName>Pupkin 2</lastName>
+    <address>www leningrad 2</address>
+    <homePhone>1234567 2</homePhone>
+    <mobilePhone>481234567892</mobilePhone>
+    <email>vasyapupkin2@gmail.com</email>
+    <group>test 2</group>
+  </contact>
+</list>

@@ -1,0 +1,29 @@
+[
+  {
+    "firstName": "Vasya 0",
+    "lastName": "Pupkin 0",
+    "address": "www leningrad 0",
+    "homePhone": "1234567 0",
+    "mobilePhone": "481234567890",
+    "email": "vasyapupkin0@gmail.com",
+    "group": "test 0"
+  },
+  {
+    "firstName": "Vasya 1",
+    "lastName": "Pupkin 1",
+    "address": "www leningrad 1",
+    "homePhone": "1234567 1",
+    "mobilePhone": "481234567891",
+    "email": "vasyapupkin1@gmail.com",
+    "group": "test 1"
+  },
+  {
+    "firstName": "Vasya 2",
+    "lastName": "Pupkin 2",
+    "address": "www leningrad 2",
+    "homePhone": "1234567 2",
+    "mobilePhone": "481234567892",
+    "email": "vasyapupkin2@gmail.com",
+    "group": "test 2"
+  }
+]
