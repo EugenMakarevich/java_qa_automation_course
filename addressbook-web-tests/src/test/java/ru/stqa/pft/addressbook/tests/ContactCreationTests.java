@@ -22,20 +22,22 @@ public class ContactCreationTests extends TestBase {
 
   @DataProvider
   public Iterator<Object[]> validContactsFromXml() throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")));
-    XStream xStream = new XStream();
-    xStream.processAnnotations(ContactData.class);
-    xStream.allowTypes(new Class[]{ContactData.class});
-    List<ContactData> contacts = (List<ContactData>) xStream.fromXML(reader);
-    return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")))) {
+      XStream xStream = new XStream();
+      xStream.processAnnotations(ContactData.class);
+      xStream.allowTypes(new Class[]{ContactData.class});
+      List<ContactData> contacts = (List<ContactData>) xStream.fromXML(reader);
+      return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
   }
 
   @DataProvider
   public Iterator<Object[]> validContactsFromJson() throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")));
-    Gson gson = new Gson();
-    List<ContactData> contacts = gson.fromJson(reader, new TypeToken< List <ContactData>>(){}.getType());
-    return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")))) {
+      Gson gson = new Gson();
+      List<ContactData> contacts = gson.fromJson(reader, new TypeToken<List<ContactData>>() {}.getType());
+      return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
   }
 
   @Test(dataProvider= "validContactsFromJson")

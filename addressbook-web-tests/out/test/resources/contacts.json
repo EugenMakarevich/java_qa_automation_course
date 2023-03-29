@@ -25,5 +25,23 @@
     "mobilePhone": "481234567892",
     "email": "vasyapupkin2@gmail.com",
     "group": "test 2"
+  },
+  {
+    "firstName": "Vasya 3",
+    "lastName": "Pupkin 3",
+    "address": "www leningrad 3",
+    "homePhone": "1234567 3",
+    "mobilePhone": "481234567893",
+    "email": "vasyapupkin3@gmail.com",
+    "group": "test 3"
+  },
+  {
+    "firstName": "Vasya 4",
+    "lastName": "Pupkin 4",
+    "address": "www leningrad 4",
+    "homePhone": "1234567 4",
+    "mobilePhone": "481234567894",
+    "email": "vasyapupkin4@gmail.com",
+    "group": "test 4"
   }
 ]
