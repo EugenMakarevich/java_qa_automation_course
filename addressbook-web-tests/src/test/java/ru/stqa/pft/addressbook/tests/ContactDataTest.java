@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class ContactDataTest extends TestBase {
   @BeforeMethod
   public void ensurePreconditions() {
-    if (app.contact().all().size() == 0) {
+    if (app.db().contacts().size() == 0) {
       app.contact().create(new ContactData()
               .withFirstName("Vasya").withLastName("Pupkin").withAddress("www leningrad")
               .withHomePhone("1234567").withMobilePhone("+48123456789").withWorkPhone("666-666-666")

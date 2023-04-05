@@ -62,10 +62,6 @@ public class ContactData {
   @Type(type = "text")
   private String photo;
 
-  public File getPhoto() {
-    return new File(photo);
-  }
-
   public int getId() {
     return id;
   }
@@ -96,25 +92,28 @@ public class ContactData {
   public String getAllPhones() {
     return allPhones;
   }
-  @Type(type = "text")
+
   public String getEmail() {
     return email;
   }
-  @Type(type = "text")
+
   public String getEmail2() {
     return email2;
   }
-  @Type(type = "text")
+
   public String getEmail3() {
     return email3;
   }
-  @Type(type = "text")
+
   public String getAllEmails() {
     return allEmails;
   }
 
   public String getGroup() {
     return group;
+  }
+  public File getPhoto() {
+    return new File(photo);
   }
 
   public ContactData withId(int id) {
