@@ -16,7 +16,7 @@ public class ContactDataTest extends TestBase {
               .withFirstName("Vasya").withLastName("Pupkin").withAddress("www leningrad")
               .withHomePhone("1234567").withMobilePhone("+48123456789").withWorkPhone("666-666-666")
               .withEmail("vasyapupkin@gmail.com").withEmail2("pukinVasya@gmail.com").withEmail3("vasyaDestroyer@gmail.com")
-              .withGroup("test1"));
+              ); //.withGroup("test1")
     }
   }
 

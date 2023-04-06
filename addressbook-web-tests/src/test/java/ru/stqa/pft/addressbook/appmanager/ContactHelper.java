@@ -37,7 +37,7 @@ public class ContactHelper extends HelperBase {
         attach(By.name("photo"), contactData.getPhoto());
       }
       if (creation) {
-          new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+          //new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
       } else {
         Assert.assertFalse(isElementPresent(By.name("new_group")));
       }
@@ -97,9 +97,9 @@ public class ContactHelper extends HelperBase {
     List<WebElement> allOptions = selectGroup.getOptions();
     for (WebElement option : allOptions) {
       String optionText = option.getText();
-      if (optionText.equals(contactData.getGroup())) {
-        return true;
-      }
+      //if (optionText.equals(contactData.getGroup())) {
+      //  return true;
+      //}
     }
     return false;
   }
