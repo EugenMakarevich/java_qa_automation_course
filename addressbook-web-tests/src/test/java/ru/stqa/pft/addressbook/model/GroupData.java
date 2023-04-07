@@ -47,7 +47,7 @@ public class GroupData {
   @Type(type = "text")
   private String footer;
 
-  public int getId() {
+  public Integer getId() {
     return id;
   }
 

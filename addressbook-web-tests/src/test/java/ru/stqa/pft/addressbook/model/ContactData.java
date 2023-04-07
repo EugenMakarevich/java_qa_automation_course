@@ -117,6 +117,15 @@ public class ContactData {
     return new File(photo);
   }
 
+  @Override
+  public String toString() {
+    return "ContactData{" +
+            "id=" + id +
+            ", firstName='" + firstName + '\'' +
+            ", lastName='" + lastName + '\'' +
+            '}';
+  }
+
   public Groups getGroups() {
     return new Groups(groups);
   }
@@ -199,11 +208,4 @@ public class ContactData {
     return Objects.hash(id, firstName, lastName);
   }
 
-  @Override
-  public String toString() {
-    return "ContactData{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            '}';
-  }
 }

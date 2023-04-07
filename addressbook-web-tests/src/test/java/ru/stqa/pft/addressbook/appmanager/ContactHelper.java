@@ -65,6 +65,19 @@ public class ContactHelper extends HelperBase {
     manager.goTo().homePage();
   }
 
+  public void create(ContactData contact) {
+    manager.goTo().addNewContactPage();
+    fillContactForm(contact, true);
+    submitContactCreation();
+    manager.goTo().homePage();
+  }
+
+  public void addToGroup(ContactData contact, GroupData group) {
+    selectContactById(contact.getId());
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(group.getId().toString());
+    wd.findElement(By.name("add")).click();
+  }
+
   private void selectContactById(int id) {
     wd.findElement(By.cssSelector(String.format("input[value='%s']", id))).click();
   }
@@ -83,13 +96,6 @@ public class ContactHelper extends HelperBase {
 
   public void submitContactModification() {
     click(By.xpath("//input[22]"));
-  }
-
-  public void create(ContactData contact) {
-    manager.goTo().addNewContactPage();
-    fillContactForm(contact, true);
-    submitContactCreation();
-    manager.goTo().homePage();
   }
 
   public boolean isThereAContact() {

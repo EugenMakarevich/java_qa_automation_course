@@ -39,4 +39,14 @@ public class DbHelper {
     session.close();
     return new Contacts(result);
   }
+
+  public Groups availableGroupsForContact() {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    List<GroupData> result = session.createQuery("from GroupData where group_id NOT IN ").list();
+    session.getTransaction().commit();
+    session.close();
+    return new Groups(result);
+  }
+
 }
