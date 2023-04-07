@@ -6,7 +6,11 @@
     "homePhone": "1234567 0",
     "mobilePhone": "481234567890",
     "email": "vasyapupkin0@gmail.com",
-    "group": "test 0",
+    "groups": [
+      {
+        "name": "new group"
+      }
+    ],
     "photo": "src/test/resources/stru.png"
   },
   {
@@ -16,7 +20,11 @@
     "homePhone": "1234567 1",
     "mobilePhone": "481234567891",
     "email": "vasyapupkin1@gmail.com",
-    "group": "test 1",
+    "groups": [
+      {
+        "name": "new group"
+      }
+    ],
     "photo": "src/test/resources/stru.png"
   },
   {
@@ -26,7 +34,11 @@
     "homePhone": "1234567 2",
     "mobilePhone": "481234567892",
     "email": "vasyapupkin2@gmail.com",
-    "group": "test 2",
+    "groups": [
+      {
+        "name": "new group"
+      }
+    ],
     "photo": "src/test/resources/stru.png"
   }
 ]

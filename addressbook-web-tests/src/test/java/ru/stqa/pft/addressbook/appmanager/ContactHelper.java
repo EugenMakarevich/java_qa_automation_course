@@ -19,11 +19,12 @@ public class ContactHelper extends HelperBase {
   }
 
   public void fillContactForm(ContactData contactData, boolean creation) {
-    if (creation && !isThereAGroup(contactData)) {
+    // I need to delete this piece of code
+    /*if (creation && !isThereAGroup(contactData)) {
       manager.goTo().groupPage();
       manager.group().create(new GroupData().withName("test1"));
       manager.goTo().addNewContactPage();
-    }
+    }*/
       type(By.name("firstname"), contactData.getFirstName());
       type(By.name("lastname"), contactData.getLastName());
       type(By.name("address"), contactData.getAddress());
@@ -33,11 +34,14 @@ public class ContactHelper extends HelperBase {
       type(By.name("email"), contactData.getEmail());
       type(By.name("email2"), contactData.getEmail2());
       type(By.name("email3"), contactData.getEmail3());
-      if(contactData.getPhoto() != null) {
-        attach(By.name("photo"), contactData.getPhoto());
-      }
+      attach(By.name("photo"), contactData.getPhoto());
+      //Here I need to check that the group from file is exists in DB
       if (creation) {
-          //new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        if(contactData.getGroups().size() > 0) {
+          Assert.assertTrue(contactData.getGroups().size() == 1);
+          new Select(wd.findElement(By.name("new_group"))).selectByVisibleText
+                  (contactData.getGroups().iterator().next().getName());
+        }
       } else {
         Assert.assertFalse(isElementPresent(By.name("new_group")));
       }
