@@ -9,6 +9,8 @@ import ru.stqa.pft.addressbook.model.Groups;
 import java.util.Collections;
 import java.util.List;
 
+import static org.testng.AssertJUnit.assertTrue;
+
 public class AddContactToGroupTest extends TestBase {
 
   @Test
@@ -18,8 +20,9 @@ public class AddContactToGroupTest extends TestBase {
     ContactData contact = before.iterator().next();
     System.out.println(contact);
     Groups availableGroups = getAvailableGroups(contact);
-    if(availableGroups.size() > 0) {
-      GroupData group = availableGroups.iterator().next();
+    GroupData group;
+    if (availableGroups.size() > 0) {
+      group = availableGroups.iterator().next();
       System.out.println(group);
       app.contact().addToGroup(contact, group);
     } else {
@@ -27,10 +30,11 @@ public class AddContactToGroupTest extends TestBase {
       app.group().create(new GroupData().withName("Test group for contact " + contact.getFirstName() + " " + contact.getLastName()));
       app.goTo().homePage();
       availableGroups = getAvailableGroups(contact);
-      GroupData group = availableGroups.iterator().next();
+      group = availableGroups.iterator().next();
       System.out.println(group);
       app.contact().addToGroup(contact, group);
     }
+    assertTrue(verifyContactIsAddedToGroup(contact, group));
   }
 
   private Groups getAvailableGroups(ContactData contact) {
@@ -39,5 +43,16 @@ public class AddContactToGroupTest extends TestBase {
     allGroups.removeAll(contactGroups);
     System.out.println(allGroups);
     return allGroups;
+  }
+
+  private boolean verifyContactIsAddedToGroup(ContactData contact, GroupData group) {
+    Groups contactGroups = contact.getGroups();
+    boolean result = false;
+    for (GroupData contactGroup : contactGroups) {
+      if (contactGroup.getId().equals(group.getId())) {
+        result = true;
+        break;
+      }
+    } return result;
   }
 }
