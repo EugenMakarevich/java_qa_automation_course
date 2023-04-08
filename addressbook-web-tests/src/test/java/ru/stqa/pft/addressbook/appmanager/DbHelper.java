@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager;
 
+import org.hibernate.Cache;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -24,29 +25,24 @@ public class DbHelper {
 
   public Groups groups() {
     Session session = sessionFactory.openSession();
+    Cache cache = sessionFactory.getCache();
     session.beginTransaction();
     List<GroupData> result = session.createQuery("from GroupData").list();
     session.getTransaction().commit();
+    session.clear();
     session.close();
     return new Groups(result);
   }
 
   public Contacts contacts() {
     Session session = sessionFactory.openSession();
+    Cache cache = sessionFactory.getCache();
     session.beginTransaction();
     List<ContactData> result = session.createQuery("from ContactData where deprecated = '0000-00-00'").list();
     session.getTransaction().commit();
+    cache.evictAllRegions();
+    session.clear();
     session.close();
     return new Contacts(result);
   }
-
-  public Groups availableGroupsForContact() {
-    Session session = sessionFactory.openSession();
-    session.beginTransaction();
-    List<GroupData> result = session.createQuery("from GroupData where group_id NOT IN ").list();
-    session.getTransaction().commit();
-    session.close();
-    return new Groups(result);
-  }
-
 }

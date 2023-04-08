@@ -117,6 +117,10 @@ public class ContactData {
     return new File(photo);
   }
 
+  public Groups getGroups() {
+    return new Groups(groups);
+  }
+
   @Override
   public String toString() {
     return "ContactData{" +
@@ -124,10 +128,6 @@ public class ContactData {
             ", firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
             '}';
-  }
-
-  public Groups getGroups() {
-    return new Groups(groups);
   }
 
   public ContactData withId(int id) {
@@ -207,5 +207,4 @@ public class ContactData {
   public int hashCode() {
     return Objects.hash(id, firstName, lastName);
   }
-
 }

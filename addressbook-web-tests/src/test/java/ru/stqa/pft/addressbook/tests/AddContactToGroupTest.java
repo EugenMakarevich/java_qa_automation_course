@@ -33,8 +33,10 @@ public class AddContactToGroupTest extends TestBase {
       group = availableGroups.iterator().next();
       System.out.println(group);
       app.contact().addToGroup(contact, group);
+      Groups contactGroups = contact.getGroups();
+      System.out.println(contactGroups);
     }
-    assertTrue(verifyContactIsAddedToGroup(contact, group));
+    assertTrue(verifyContactIsAddedToGroup(group));
   }
 
   private Groups getAvailableGroups(ContactData contact) {
@@ -45,7 +47,9 @@ public class AddContactToGroupTest extends TestBase {
     return allGroups;
   }
 
-  private boolean verifyContactIsAddedToGroup(ContactData contact, GroupData group) {
+  private boolean verifyContactIsAddedToGroup(GroupData group) {
+    Contacts before = app.db().contacts();
+    ContactData contact = before.iterator().next(); //To clear cache
     Groups contactGroups = contact.getGroups();
     boolean result = false;
     for (GroupData contactGroup : contactGroups) {
