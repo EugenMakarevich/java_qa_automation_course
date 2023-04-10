@@ -7,6 +7,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.List;
+import java.util.Random;
 
 public class GroupHelper extends HelperBase {
   public GroupHelper(WebDriver wd) {
@@ -95,4 +96,8 @@ public class GroupHelper extends HelperBase {
     return new Groups(groupCache);
   }
 
+  public GroupData getRandomGroup(Groups groups) {
+    GroupData[] arrayGroups = groups.toArray(new GroupData[groups.size()]);
+    return arrayGroups[new Random().nextInt(groups.size())];
+  }
 }

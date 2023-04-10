@@ -6,6 +6,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.NativeQuery;
+import org.hibernate.query.Query;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
@@ -25,24 +27,31 @@ public class DbHelper {
 
   public Groups groups() {
     Session session = sessionFactory.openSession();
-    Cache cache = sessionFactory.getCache();
     session.beginTransaction();
     List<GroupData> result = session.createQuery("from GroupData").list();
     session.getTransaction().commit();
-    session.clear();
     session.close();
     return new Groups(result);
   }
 
   public Contacts contacts() {
     Session session = sessionFactory.openSession();
-    Cache cache = sessionFactory.getCache();
     session.beginTransaction();
     List<ContactData> result = session.createQuery("from ContactData where deprecated = '0000-00-00'").list();
     session.getTransaction().commit();
-    cache.evictAllRegions();
-    session.clear();
     session.close();
     return new Contacts(result);
+  }
+
+  public Integer getContactId() {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    Query query = session.createSQLQuery("SELECT id FROM addressbook WHERE deprecated = '0000-00-00' ORDER BY RAND() LIMIT 1");
+    List<Integer> resultList = query.getResultList();
+    Integer result = resultList.get(0);
+    System.out.println(result);
+    session.getTransaction().commit();
+    session.close();
+    return result;
   }
 }

@@ -7,8 +7,10 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.List;
+import java.util.Random;
 
 public class ContactHelper extends HelperBase {
   private final ApplicationManager manager;
@@ -72,13 +74,12 @@ public class ContactHelper extends HelperBase {
     manager.goTo().homePage();
   }
 
-  public void addToGroup(ContactData contact, GroupData group) {
-    selectContactById(contact.getId());
+  public void addToGroup(GroupData group) {
     new Select(wd.findElement(By.name("to_group"))).selectByValue(group.getId().toString());
     wd.findElement(By.name("add")).click();
   }
 
-  private void selectContactById(int id) {
+  public void selectContactById(int id) {
     wd.findElement(By.cssSelector(String.format("input[value='%s']", id))).click();
   }
 
@@ -146,5 +147,17 @@ public class ContactHelper extends HelperBase {
     return new ContactData().withFirstName(firstName).withLastName(lastName)
             .withAddress(address).withHomePhone(home).withMobilePhone(mobile)
             .withWorkPhone(work).withEmail(email).withEmail2(email2).withEmail3(email3);
+  }
+
+  public ContactData getRandomContact(Contacts contacts) {
+    ContactData[] arrayContacts = contacts.toArray(new ContactData[contacts.size()]);
+    return arrayContacts[new Random().nextInt(contacts.size())];
+  }
+
+  public Groups getAvailableGroupsForContact(ContactData contact) {
+    Groups allGroups = manager.db().groups();
+    Groups contactGroups = contact.getGroups();
+    allGroups.removeAll(contactGroups);
+    return allGroups;
   }
 }
