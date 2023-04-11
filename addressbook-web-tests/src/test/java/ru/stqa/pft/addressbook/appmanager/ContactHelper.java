@@ -2,7 +2,9 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
@@ -11,6 +13,8 @@ import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.List;
 import java.util.Random;
+
+import static java.time.Duration.ofSeconds;
 
 public class ContactHelper extends HelperBase {
   private final ApplicationManager manager;
@@ -21,12 +25,6 @@ public class ContactHelper extends HelperBase {
   }
 
   public void fillContactForm(ContactData contactData, boolean creation) {
-    // I need to delete this piece of code
-    /*if (creation && !isThereAGroup(contactData)) {
-      manager.goTo().groupPage();
-      manager.group().create(new GroupData().withName("test1"));
-      manager.goTo().addNewContactPage();
-    }*/
       type(By.name("firstname"), contactData.getFirstName());
       type(By.name("lastname"), contactData.getLastName());
       type(By.name("address"), contactData.getAddress());
@@ -159,5 +157,14 @@ public class ContactHelper extends HelperBase {
     Groups contactGroups = contact.getGroups();
     allGroups.removeAll(contactGroups);
     return allGroups;
+  }
+
+  public void filterGroup(GroupData group) {
+    new Select(wd.findElement(By.name("group"))).selectByValue(group.getId().toString());
+    new WebDriverWait(wd, ofSeconds(2)).until(ExpectedConditions.elementToBeClickable(By.name("remove")));
+  }
+
+  public void removeFromGroup() {
+    wd.findElement(By.name("remove")).click();
   }
 }

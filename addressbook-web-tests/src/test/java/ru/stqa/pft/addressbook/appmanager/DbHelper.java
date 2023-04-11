@@ -43,7 +43,7 @@ public class DbHelper {
     return new Contacts(result);
   }
 
-  public Integer getContactId() {
+ /* public Integer getContactId() {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
     Query query = session.createSQLQuery("SELECT id FROM addressbook WHERE deprecated = '0000-00-00' ORDER BY RAND() LIMIT 1");
@@ -53,5 +53,5 @@ public class DbHelper {
     session.getTransaction().commit();
     session.close();
     return result;
-  }
+  }*/
 }
