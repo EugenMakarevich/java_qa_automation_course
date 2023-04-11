@@ -40,8 +40,7 @@ public class AddContactToGroupTest extends TestBase {
     app.contact().addToGroup(group);
     assertTrue(verifyContactIsAddedToGroup(contact, group));
   }
-
-
+  
   private boolean verifyContactIsAddedToGroup(ContactData contact, GroupData group) {
     //To Clear cache
     Contacts contacts = app.db().contacts();

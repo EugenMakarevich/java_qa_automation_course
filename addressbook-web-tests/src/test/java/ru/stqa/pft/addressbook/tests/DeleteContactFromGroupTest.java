@@ -21,7 +21,6 @@ public class DeleteContactFromGroupTest extends TestBase {
     contacts = app.db().contacts();
     contact = app.contact().getRandomContact(contacts);
     groups = contact.getGroups();
-    group = app.group().getRandomGroup(groups);
     if (groups.size() == 0) {
       Groups allGroups = app.db().groups();
       if (allGroups.size() == 0) {
@@ -29,11 +28,14 @@ public class DeleteContactFromGroupTest extends TestBase {
         app.group().create(new GroupData().withName("Test group for contact with id = " + contact.getId()));
         app.goTo().homePage();
       }
+      allGroups = app.db().groups();
       group = app.group().getRandomGroup(allGroups);
       app.contact().selectContactById(contact.getId());
       app.contact().addToGroup(group);
       app.goTo().homePage();
       assertTrue(verifyContactIsAddedToGroup(contact, group));
+    } else {
+      group = app.group().getRandomGroup(groups);
     }
   }
 
