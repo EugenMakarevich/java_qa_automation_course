@@ -195,6 +195,11 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withGroups(Set<GroupData> groups) {
+    this.groups = groups;
+    return this;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

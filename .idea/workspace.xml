@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteContactFromGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteContactFromGroupTest.java" afterDir="false" />
     </list>
@@ -87,7 +88,7 @@
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddContactToGroupTest">
+  <component name="RunManager" selected="TestNG.DeleteContactFromGroupTest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -317,13 +318,11 @@
       <item itemvalue="TestNG.AddContactToGroupTest" />
       <item itemvalue="TestNG.HbConnectionTest" />
       <item itemvalue="TestNG.GroupModificationTests" />
-      <item itemvalue="TestNG.ContactCreationTests (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddContactToGroupTest" />
         <item itemvalue="TestNG.DeleteContactFromGroupTest" />
-        <item itemvalue="TestNG.ContactCreationTests (1)" />
+        <item itemvalue="TestNG.AddContactToGroupTest" />
         <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.GroupModificationTests" />
       </list>
@@ -361,8 +360,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteContactFromGroupTest.java</url>
-          <line>20</line>
+          <line>22</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
