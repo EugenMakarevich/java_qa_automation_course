@@ -15,12 +15,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.regex.MatchResult;
 
 public class ApplicationManager {
   private final Properties properties;
-  WebDriver wd;
+  private WebDriver wd;
   JavascriptExecutor js;
   private String browser;
+  private RegistrationHelper registrationHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -30,26 +32,12 @@ public class ApplicationManager {
   public void init() throws IOException {
     String target = System.getProperty("target","local");
     properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
-
-
-    if (browser.equals(BrowserType.FIREFOX)) {
-      wd = new FirefoxDriver();
-    } else if (browser.equals(BrowserType.CHROME)) {
-      //Hack to fix issue with ChromeDriver 111
-      ChromeOptions co = new ChromeOptions();
-      co.addArguments("--remote-allow-origins=*");
-      wd = new ChromeDriver(co);
-    } else if (browser.equals(BrowserType.IE)) {
-      wd = new InternetExplorerDriver();
-    }
-
-    wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-    js = (JavascriptExecutor) wd;
-    wd.get(properties.getProperty("web.baseUrl"));
   }
 
   public void stop() {
-    wd.quit();
+    if (wd != null) {
+      wd.quit();
+    }
   }
 
   protected boolean isElementPresent(By by) {
@@ -67,5 +55,31 @@ public class ApplicationManager {
 
   public String getProperty(String key) {
     return properties.getProperty(key);
+  }
+
+  public RegistrationHelper registration() {
+    if (registrationHelper == null) {
+      registrationHelper = new RegistrationHelper(this);
+    }
+    return registrationHelper;
+  }
+
+  public WebDriver getDriver() {
+    if(wd == null) {
+      if (browser.equals(BrowserType.FIREFOX)) {
+        wd = new FirefoxDriver();
+      } else if (browser.equals(BrowserType.CHROME)) {
+        //Hack to fix issue with ChromeDriver 111
+        ChromeOptions co = new ChromeOptions();
+        co.addArguments("--remote-allow-origins=*");
+        wd = new ChromeDriver(co);
+      } else if (browser.equals(BrowserType.IE)) {
+        wd = new InternetExplorerDriver();
+      }
+      wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+      js = (JavascriptExecutor) wd;
+      wd.get(properties.getProperty("web.baseUrl"));
+    }
+    return wd;
   }
 }
