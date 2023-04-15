@@ -16,7 +16,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.regex.MatchResult;
 
 public class ApplicationManager {
   private final Properties properties;
@@ -28,6 +27,7 @@ public class ApplicationManager {
   private MailHelper mailHelper;
   private JamesHelper jamesHelper;
   private HelperBase baseHelper;
+  private NavigationHelper navigationHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -114,5 +114,12 @@ public class ApplicationManager {
       baseHelper = new HelperBase(this);
     }
     return baseHelper;
+  }
+
+  public NavigationHelper goTo() {
+    if (navigationHelper == null) {
+      navigationHelper = new NavigationHelper(this);
+    }
+    return navigationHelper;
   }
 }
