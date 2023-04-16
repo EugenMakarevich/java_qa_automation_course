@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis-tests.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis-tests.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/DbHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/DbHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/AddContactToGroupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/ApplicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/ChangePasswordTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/ChangePasswordTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,8 +107,8 @@
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.stqa.pft.mantis.appmanager" />
       <recent name="ru.stqa.pft.mantis.tests" />
+      <recent name="ru.stqa.pft.mantis.appmanager" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.ChangePasswordTests">
@@ -280,7 +288,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteContactFromGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HbConnectionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -289,7 +297,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.DeleteContactFromGroupTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.HbConnectionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -297,7 +305,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -306,7 +314,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.HbConnectionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -335,19 +343,19 @@
       <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="TestNG.HbConnectionTest" />
+      <item itemvalue="TestNG.HbConnectionTest (1)" />
       <item itemvalue="TestNG.ChangePasswordTests" />
       <item itemvalue="TestNG.RegistrationTests" />
-      <item itemvalue="TestNG.LoginTests" />
-      <item itemvalue="TestNG.DeleteContactFromGroupTest" />
       <item itemvalue="TestNG.AddContactToGroupTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ChangePasswordTests" />
-        <item itemvalue="TestNG.RegistrationTests" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.DeleteContactFromGroupTest" />
+        <item itemvalue="TestNG.HbConnectionTest" />
+        <item itemvalue="TestNG.HbConnectionTest (1)" />
         <item itemvalue="TestNG.AddContactToGroupTest" />
+        <item itemvalue="TestNG.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -395,11 +403,6 @@
           <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
           <line>27</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

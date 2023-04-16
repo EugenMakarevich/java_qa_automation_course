@@ -15,7 +15,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/addressbook1</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/bugtracker</property>
         <property name="connection.username">root</property>
         <property name="connection.password"></property>
 
@@ -37,8 +37,7 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Names the annotated entity class -->
-        <mapping class="ru.stqa.pft.addressbook.model.GroupData"/>
-        <mapping class="ru.stqa.pft.addressbook.model.ContactData"/>
+        <mapping class="ru.stqa.pft.mantis.model.UserData"/>
 
     </session-factory>
 
