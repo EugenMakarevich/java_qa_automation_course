@@ -24,4 +24,11 @@ public class UserHelper extends HelperBase {
   public void resetPassword() {
     wd.findElement(By.xpath("//form[@id='manage-user-reset-form']/fieldset/span/input")).click();
   }
+
+  public void setNewPassword(String link, String password) {
+    app.getDriver().get(link);
+    app.baseHelper().type(By.id("password"), password);
+    app.baseHelper().type(By.id("password-confirm"), password);
+    click(By.cssSelector("button[type=submit]"));
+  }
 }
