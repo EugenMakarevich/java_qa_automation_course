@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
       <recent name="ru.stqa.pft.mantis.appmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SoapTests (1)">
+  <component name="RunManager" selected="TestNG.IssueResolutionTest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -135,29 +136,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.soap.GeoIpServiceTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -288,6 +266,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IssueResolutionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.IssueResolutionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -342,8 +337,8 @@
     <list>
       <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
-      <item itemvalue="Gradle.GeoIpServiceTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="TestNG.IssueResolutionTest" />
       <item itemvalue="TestNG.RegistrationTests" />
       <item itemvalue="TestNG.SoapTests" />
       <item itemvalue="TestNG.SoapTests (1)" />
@@ -351,11 +346,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.IssueResolutionTest" />
         <item itemvalue="TestNG.SoapTests (1)" />
         <item itemvalue="TestNG.RegistrationTests" />
         <item itemvalue="TestNG.SoapTests" />
         <item itemvalue="TestNG.GeoIpServiceTests" />
-        <item itemvalue="Gradle.GeoIpServiceTests" />
       </list>
     </recent_temporary>
   </component>
