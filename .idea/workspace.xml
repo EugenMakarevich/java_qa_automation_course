@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/rest-sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +104,12 @@
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.rest" />
       <recent name="ru.stqa.pft.mantis.tests" />
       <recent name="ru.stqa.pft.mantis.appmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestTests">
+  <component name="RunManager" selected="TestNG.RestAssuredTests">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -294,16 +292,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
+    <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-sample.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -350,18 +348,18 @@
       <item itemvalue="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <item itemvalue="Gradle.RestTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="TestNG.RestAssuredTests" />
       <item itemvalue="TestNG.RestTests" />
       <item itemvalue="TestNG.IssueResolutionTest" />
-      <item itemvalue="TestNG.RegistrationTests" />
       <item itemvalue="TestNG.SoapTests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RestAssuredTests" />
         <item itemvalue="TestNG.RestTests" />
         <item itemvalue="Gradle.RestTests" />
         <item itemvalue="TestNG.IssueResolutionTest" />
         <item itemvalue="TestNG.SoapTests (1)" />
-        <item itemvalue="TestNG.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -412,13 +410,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="23" />
+          <line>25</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
