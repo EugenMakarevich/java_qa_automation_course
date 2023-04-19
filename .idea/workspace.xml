@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +100,7 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\sandbox\reports" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\rest-sample\src\test\resources" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\mantis-tests\src\test\resources" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
