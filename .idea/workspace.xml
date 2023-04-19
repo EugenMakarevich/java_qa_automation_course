@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Collections.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Collections.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equality.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equality.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equation.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/MyFirstProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/MyFirstProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Points.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Points.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Primes.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Primes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/EquationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/EquationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PointTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PointTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PrimeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PrimeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/SquareTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,18 +79,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;Java 8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/rest-sample/src/test/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "Java 8",
+    "last_opened_file_path": "C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/sandbox/reports",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.rest" />
