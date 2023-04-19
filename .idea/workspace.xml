@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/out/test/classes/ru/stqa/pft/rest/RestTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/out/test/classes/ru/stqa/pft/rest/RestTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestAssuredTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Collections.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Collections.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equality.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equality.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equation.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Equation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/MyFirstProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/MyFirstProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Points.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Points.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Primes.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Primes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stqa/pft/sandbox/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/EquationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/EquationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PointTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PointTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PrimeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/PrimeTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/pft/sandbox/SquareTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,18 +93,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "Java 8",
-    "last_opened_file_path": "C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/rest-sample/src/test/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;Java 8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/rest-sample/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.rest" />
@@ -119,7 +124,7 @@
       <recent name="ru.stqa.pft.mantis.appmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestTests">
+  <component name="RunManager" selected="TestNG.ru.stqa.pft.sandbox">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -336,17 +341,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoapTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
+    <configuration name="ru.stqa.pft.sandbox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -358,18 +362,18 @@
       <item itemvalue="Application.ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <item itemvalue="Gradle.RestTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="TestNG.ru.stqa.pft.sandbox" />
       <item itemvalue="TestNG.RestAssuredTests" />
       <item itemvalue="TestNG.RestTests" />
       <item itemvalue="TestNG.IssueResolutionTest" />
-      <item itemvalue="TestNG.SoapTests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ru.stqa.pft.sandbox" />
         <item itemvalue="TestNG.RestTests" />
         <item itemvalue="TestNG.RestAssuredTests" />
         <item itemvalue="Gradle.RestTests" />
         <item itemvalue="TestNG.IssueResolutionTest" />
-        <item itemvalue="TestNG.SoapTests (1)" />
       </list>
     </recent_temporary>
   </component>
