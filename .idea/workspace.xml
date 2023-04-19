@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92bac55-98a9-41fa-81c6-b4493e4370f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "Java 8",
-    "last_opened_file_path": "C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/addressbook-web-tests/src/test/resources/test-result",
+    "last_opened_file_path": "C:/Users/EugenMakarevich/Documents/GitHub/java_qa_automation_course/addressbook-web-tests/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -101,11 +101,11 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources\test-result" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\sandbox\reports" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\rest-sample\src\test\resources" />
       <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\mantis-tests\src\test\resources" />
-      <recent name="C:\Users\EugenMakarevich\Documents\GitHub\java_qa_automation_course\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.rest.appmanager" />
